@@ -130,6 +130,7 @@ import copy
 #   >>> logging_demo.basicConfig(stream=HTMLTestRunner.stdout_redirector)
 #   >>>
 
+
 class OutputRedirector(object):
     """ Wrapper to redirect stdout or stderr """
 

@@ -72,7 +72,7 @@ class RequestInterface(object):
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
-        print("****************\n接口请求结果：%s\n****************\n返回的数据是：%s\n****************\n响应时间(秒)：%s\n****************" % (result['message'], result['data'], result['durtime']))
+        print("****************\n接口请求结果：%s\n****************\n返回的数据是：\n%s\n****************\n响应时间(秒)：%s\n****************" % (result['message'], result['data'], result['durtime']))
         # print("接口请求结果：%s" % result['message'])
         return result
 
