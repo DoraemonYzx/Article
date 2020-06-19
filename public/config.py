@@ -10,6 +10,7 @@ import os
 # 当前代码所在目录的上层
 src_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 base_url = "https://testserver.cxjk.com/api/article"
+# base_url = "https://server.cxnice.com/api/article"
 data_path = src_path+'\\data\\'
 
 

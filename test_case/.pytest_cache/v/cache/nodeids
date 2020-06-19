@@ -1,0 +1,19 @@
+[
+  "test_interface_select.py::TestInterfaceSelect::test_01_categorySelect_1",
+  "test_interface_select.py::TestInterfaceSelect::test_01_categorySelect_2",
+  "test_interface_select.py::TestInterfaceSelect::test_02_flagSelect_1",
+  "test_interface_select.py::TestInterfaceSelect::test_02_flagSelect_2",
+  "test_interface_select.py::TestInterfaceSelect::test_03_query_1",
+  "test_interface_select.py::TestInterfaceSelect::test_04_queryArtcleCategoryFlagByNo_1",
+  "test_interface_select.py::TestInterfaceSelect::test_05_queryCategoryAll_1",
+  "test_interface_select.py::TestInterfaceSelect::test_06_queryFlagAll_1",
+  "test_interface_select.py::TestInterfaceSelect::test_07_select_1",
+  "test_interface_select.py::TestInterfaceSelect::test_08_select2_1",
+  "test_interface_select.py::TestInterfaceSelect::test_09_selectAll_1",
+  "test_interface_select.py::TestInterfaceSelect::test_10_selectByArticleNo_1",
+  "test_interface_select.py::TestInterfaceSelect::test_11_selectById_1",
+  "test_interface_select.py::TestInterfaceSelect::test_12_selectCategoryAll_1",
+  "test_interface_select.py::TestInterfaceSelect::test_13_selectCategoryAllChild_1",
+  "test_interface_select.py::TestInterfaceSelect::test_14_selectFlagAll_1",
+  "test_interface_select.py::TestInterfaceSelect::test_15_selectFlagAllChild_1"
+]
