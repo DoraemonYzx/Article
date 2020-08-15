@@ -48,7 +48,8 @@ class TestCase(object):
                         return True
 
     def test_case(self, datalist):
-        print("\n****************\n接口描述：%s\n请求入参是:%s" % (datalist['interface'], datalist['msg']))
+        print("\n****************\n接口地址：%s\n****************\n用例名称：%s\n****************\n请求头部是：%s\n****************\n请求入参是：%s" %
+              (datalist['interface'], datalist['msg'], json.dumps(datalist['h'], ensure_ascii=False), json.dumps(datalist['d'], ensure_ascii=False)))
         url = config.base_url + datalist['url']
         result = r.http_request(interface_url=url, headerdata=datalist['h'],
                                 interface_param=datalist['d'], request_type=datalist['mode'])

@@ -54,8 +54,10 @@ class RequestInterface(object):
                 # temp_interface_param = self.__new_param(interface_param)
                 if headerdata['Content-Type'] == "application/json":
                     response = s.post(url=interface_url, headers=headerdata, json=interface_param, verify=False, timeout=10)
+                    print("****************\nstatus_code:%s" % response.status_code)
                 else:
                     response = s.post(url=interface_url, headers=headerdata, data=interface_param, verify=False, timeout=10)
+                    print("****************\nstatus_code:%s" % response.status_code)
                 if response.status_code == 200:
                     # durtime = response.elapsed.microseconds / 1000  # 发起请求和响应到达的时间，单位ms
                     durtime = response.elapsed.total_seconds()
@@ -93,6 +95,7 @@ class RequestInterface(object):
                 else:
                     requrl = interface_url+'?'+interface_param
                 response = s.get(url=requrl, headers=headerdata, verify=False, timeout=10)
+                print("****************\nstatus_code:%s" % response.status_code)
                 if response.status_code == 200:
                     durtime = response.elapsed.microseconds / 1000  # 发起请求和相应到达的时间，单位ms
                     result = {'code': '0000', 'message': '成功', 'data': response.text, 'durtime': durtime}
